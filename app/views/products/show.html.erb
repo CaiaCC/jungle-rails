@@ -1,3 +1,4 @@
+<%# <%= @msg %> 
 <section class="products-show">
 
   <header class="page-header">
@@ -12,18 +13,8 @@
         <%= image_tag @product.image.url, class: 'main-img' %>
       </div>
 
-      <div class="col-sm-8">
-        <dl class="dl-horizontal">
-          <dt>Name</dt>
-          <dd><%= @product.name %></dd>
-          <dt>Description</dt>
-          <dd><%= @product.description %></dd>
-          <dt>Quantity</dt>
-          <dd><%= @product.quantity %></dd>
-          <dt>Price</dt>
-          <dd><%= @product.price %></dd>
-        </dl>
-      </div>
+      <%= render 'product_details', product: @product %>  <!--pass @product so that _product_details can use it as local var--><!--calling ruby method impicit: render ('product_details', {product: @product}) contains 2 params: 1(partial template) + hash(key value pairs) -->
+      <!--<%= render :partial => 'product_details', locals: { product: @product } %>--> <!--old way, more verbose-->
     </div>
 
   </article>
