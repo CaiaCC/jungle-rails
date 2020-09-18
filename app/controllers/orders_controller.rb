@@ -1,7 +1,9 @@
 class OrdersController < ApplicationController
 
   def show
+    # byebug
     @order = Order.find(params[:id])
+    
   end
 
   def create
@@ -27,6 +29,7 @@ class OrdersController < ApplicationController
   end
 
   def perform_stripe_charge
+    puts cart_subtotal_cents
     Stripe::Charge.create(
       source:      params[:stripeToken],
       amount:      cart_subtotal_cents,
@@ -52,6 +55,7 @@ class OrdersController < ApplicationController
         total_price: product.price * quantity
       )
     end
+    
     order.save!
     order
   end
