@@ -5,20 +5,12 @@
     Products count
     <span class="badge badge-primary badge-pill"><%= @product_count %></span>
   </li>
-	<li>
-		<button type="button" class="btn btn-primary btn-lg btn-block">
-			<%= link_to "products", [:admin, :products] %>
-			See the product list
-		</button>
-	</li>
+	<li class="list-group-item list-group-item-primary"><%= link_to "See the product list here.", [:admin, :products] %></li>
+</ul>
+<ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
     Categories count
     <span class="badge badge-primary badge-pill"><%= @category_count %></span>
   </li>
-	<li>
-		<button type="button" class="btn btn-primary btn-lg btn-block">
-			<%= link_to "root", [:admin, :root] %>
-			See the category list
-		</button>
-	</li>
+	<li class="list-group-item list-group-item-primary"><%= link_to "See the category list here.", [:admin, :categories] %></li>
 </ul>
