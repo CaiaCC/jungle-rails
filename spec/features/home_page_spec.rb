@@ -9,6 +9,7 @@ before :each do
       @category.products.create!(
         name:  Faker::Hipster.sentence(3),
         description: Faker::Hipster.paragraph(4),
+        image: open_asset('apparel1.jpg'),
         quantity: 10,
         price: 64.99
       )
@@ -20,10 +21,10 @@ before :each do
     visit "/"
 
     # DEBUG / VERIFY  
-    save_screenshot
+    # save_screenshot
     
     # VERITY
-    expect(page).to have_css 'article.product'
+    expect(page).to have_css 'article.product', count: 10
   end
 
 end
