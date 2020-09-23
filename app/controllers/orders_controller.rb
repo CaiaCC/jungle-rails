@@ -57,7 +57,7 @@ class OrdersController < ApplicationController
     end
     
     order.save!
-    UserMailer.receipt_email(order).deliver
+    UserMailer.receipt_email(order).deliver_now
     
     order
   end
