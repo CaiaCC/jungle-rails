@@ -23,4 +23,4 @@ class SessionsController < ApplicationController
     redirect_to '/'
   end
 
-endaaaaa
+end

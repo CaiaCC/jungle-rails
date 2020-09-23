@@ -20,6 +20,6 @@ RSpec.feature "AddToCarts", type: :feature, js: true do
     first('article.product').find_button('Add').click
     page.find('nav.navbar').click_link('My Cart (1)')
     expect(page).to have_content('TOTAL:')
-    save_screenshot
+    # save_screenshot
   end
 end
