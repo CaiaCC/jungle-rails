@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 			session[:user_id] = user.id
 			redirect_to '/'
 		else
-			redirect_to '/singnup'  # need? since no restrick from access
+			redirect_to '/signup'  # need? since no restrick from access
 		end
 	end
 
