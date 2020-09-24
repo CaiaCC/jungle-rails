@@ -3,7 +3,9 @@
 LHL web development project: A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
 ## Screenshots
-!["Screenshot of Jungle01"]()
+!["Screenshot of Jungle01"](https://github.com/CaiaCC/jungle-rails/blob/master/doc/screenshot_of_Jungle_01.png?raw=true)
+!["Screenshot of Jungle02"](https://github.com/CaiaCC/jungle-rails/blob/master/doc/screenshot_of_Jungle_02.png?raw=true)
+!["Screenshot of Jungle03"](https://github.com/CaiaCC/jungle-rails/blob/master/doc/screenshot_of_Jungle_03.png?raw=true)
 
 ## Features
 * Sold out badge: shows when product has 0 inventory.
