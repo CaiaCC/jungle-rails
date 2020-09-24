@@ -1,6 +1,17 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+LHL web development project: A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+
+## Screenshots
+!["Screenshot of Jungle01"]()
+
+## Features
+* Sold out badge: shows when product has 0 inventory.
+* Administration: Admin user can create and delete product categories and product.
+* User Authentication: 
+	  * A user can register with their name, email, and password (leveraging bcrypt). 
+		* A user can not register with existing email (uniqueness validation).
+* Email Receipt: A user will receive an email receipt after order successfully.
 
 
 ## Setup
